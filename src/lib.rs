@@ -183,7 +183,7 @@ pub fn get_score_interval_continuity(&self) -> f64 {
         populated += 1;
       }
     }
-    populated as f64 / interval_max as f64
+    (if populated < 512 { populated } else { 512 }) as f64 / 512 as f64
   }
 
 /// Generate the score based on the amplitude of significant interval measurements relative to twice the range of byte.
