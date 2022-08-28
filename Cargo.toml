@@ -1,14 +1,18 @@
 [package]
 name = "libbytestat"
-version = "0.0.2"
+version = "0.0.3"
 license = "AGPL-3.0-only"
 edition = "2018"
 
 authors = ["Sylvain_Saucier", "SYSAU_LAB"]
-
-description = "Randomness analyzer."
-keywords = ["randomness", "statistics"]
+description = "Randomness analyzer"
+keywords = ["randomness", "statistics", "random", "analyzer"]
 categories = ["parsing", "mathematics", "science"]
+repository = "https://github.com/sysaulab/libbytestat"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[example]]
+name = "bytestat"
+path = "examples/bytestat.rs"
 
 [dependencies]
